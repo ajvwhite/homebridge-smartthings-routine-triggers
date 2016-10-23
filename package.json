@@ -1,6 +1,6 @@
 {
   "name": "homebridge-smartthings-routine-triggers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A homebridge implementation to trigger SmartThings routines",
   "main": "index.js",
   "engines": {
