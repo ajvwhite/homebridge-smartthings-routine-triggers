@@ -20,9 +20,9 @@ definition(
     author: "Alexander White & Jesse Newland",
     description: "A SmartThings app designed to work with homebridge to provide Siri triggers for your SmartThings Routines.",
     category: "SmartThings Labs",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/ajvwhite/homebridge-smartthings-routine-triggers/master/smartapp_icons/HomebridgeRoutineTrigger.png",
+    iconX2Url: "https://raw.githubusercontent.com/ajvwhite/homebridge-smartthings-routine-triggers/master/smartapp_icons/HomebridgeRoutineTrigger@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/ajvwhite/homebridge-smartthings-routine-triggers/master/smartapp_icons/HomebridgeRoutineTrigger@3x.png",
     oauth: true)
 
 
@@ -48,7 +48,7 @@ preferences {
 }
 
 def copyConfig() {
-    dynamicPage(name: "copyConfig", title: "Config", install:true) {
+    dynamicPage(name: "copyConfig", title: "Config", install:true, uninstall:true) {
         section() {
             paragraph "Copy/Paste the below into your homebridge's config.json to create HomeKit accessories for your SmartThing Routines"
             href url:"https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/${app.id}/config?access_token=${state.accessToken}", style:"embedded", required:false, title:"Config", description:"Tap, select, copy, then click \"Done\""
