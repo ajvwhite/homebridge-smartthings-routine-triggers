@@ -5,7 +5,7 @@ module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory('homebridge-smartthings-routine', 'SmartThingsRoutine', SmartThingsRoutineAccessory);
+  homebridge.registerAccessory('homebridge-smartthings-routine-triggers', 'SmartThingsRoutine', SmartThingsRoutineAccessory);
 }
 
 function SmartThingsRoutineAccessory(log, config) {
