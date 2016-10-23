@@ -5,10 +5,10 @@ module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory('homebridge-smartthings-routine-triggers', 'SmartThingsRoutine', SmartThingsRoutineAccessory);
+  homebridge.registerAccessory('homebridge-smartthings-routine-triggers', 'HomebridgeRoutineTrigger', HomebridgeRoutineTriggerAccessory);
 }
 
-function SmartThingsRoutineAccessory(log, config) {
+function HomebridgeRoutineTriggerAccessory(log, config) {
   var accessory = this;
 
   this.log = log;
@@ -69,6 +69,6 @@ function SmartThingsRoutineAccessory(log, config) {
       });
 }
 
-SmartThingsRoutineAccessory.prototype.getServices = function() {
+HomebridgeRoutineTriggerAccessory.prototype.getServices = function() {
   return [this.service];
 };
