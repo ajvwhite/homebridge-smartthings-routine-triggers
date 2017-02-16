@@ -7,12 +7,12 @@ routines from [Homebridge](https://github.com/nfarina/homebridge).
 ## Installation
 
 1. `npm install -g ajvwhite/homebridge-smartthings-routine-triggers`
-2. Install the [HomebridgeRoutineTrigger.groovy](HomebridgeRoutineTrigger.groovy) SmartApp in the API portal:
+2. Install the [homebridge-routine-triggers.groovy](https://github.com/ajvwhite/homebridge-smartthings-routine-triggers/tree/master/smartapps/ajvwhite/homebridge-routine-triggers.src/homebridge-routine-triggers.groovy) SmartApp in the API portal:
    **European API Portal:** [SmartThings EU API Portal](https://graph-eu01-euwest1.api.smartthings.com/)
    **US API Portal:** [SmartThings Main API Portal](https://graph.api.smartthings.com/)
    \(**NOTE:** ***If outside of Europe*** Replace instances of
    `graph-eu01-euwest1.api.smartthings.com` with `graph.api.smartthings.com` in
-   ***HomebridgeRoutineTrigger.groovy*** before adding.\)
+   ***homebridge-routine-triggers.groovy*** before adding.\)
 3. Ensure when adding, to enable OAuth in the SmartApp configuration
 4. Save and Publish the app for your own account
 5. In the SmartThings app on your mobile device add the SmartApp by going to
