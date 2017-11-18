@@ -1,18 +1,21 @@
 # homebridge-smartthings-routine-triggers
 
-A modified version of [arcreative's homebridge-smartthings-routine](https://github.com/arcreative/homebridge-smartthings-routine) to work
-even after recent API Changes. This is a little plugin to trigger SmartThings
-routines from [Homebridge](https://github.com/nfarina/homebridge).
+This is a little plugin to trigger SmartThings routines from [Homebridge](https://github.com/nfarina/homebridge).
+
+It is a modified version of [arcreative's homebridge-smartthings-routine](https://github.com/arcreative/homebridge-smartthings-routine)
+to work even after recent API Changes.
 
 ## Installation
 
 1. `npm install -g ajvwhite/homebridge-smartthings-routine-triggers`
-2. Install the [homebridge-routine-triggers.groovy](https://github.com/ajvwhite/homebridge-smartthings-routine-triggers/tree/master/smartapps/ajvwhite/homebridge-routine-triggers.src/homebridge-routine-triggers.groovy) SmartApp in the API portal:
-   **European API Portal:** [SmartThings EU API Portal](https://graph-eu01-euwest1.api.smartthings.com/)
-   **US API Portal:** [SmartThings Main API Portal](https://graph.api.smartthings.com/)
-   \(**NOTE:** ***If outside of Europe*** Replace instances of
-   `graph-eu01-euwest1.api.smartthings.com` with `graph.api.smartthings.com` in
-   ***homebridge-routine-triggers.groovy*** before adding.\)
+2. Install the [homebridge-routine-triggers.groovy](homebridge-routine-triggers.src/homebridge-routine-triggers.groovy) 
+SmartApp in the API portal:  
+    
+    **European API Portal:** [SmartThings EU API Portal](https://graph-eu01-euwest1.api.smartthings.com/)  
+    **US API Portal:** [SmartThings Main API Portal](https://graph.api.smartthings.com/)  
+    
+    \(**NOTE:** If outside of Europe, replace instances of `graph-eu01-euwest1.api.smartthings.com` with `graph.api.smartthings.com` in [homebridge-routine-triggers.groovy](homebridge-routine-triggers.src/homebridge-routine-triggers.groovy) before adding.\)
+    
 3. Ensure when adding, to enable OAuth in the SmartApp configuration
 4. Save and Publish the app for your own account
 5. In the SmartThings app on your mobile device add the SmartApp by going to
@@ -26,13 +29,19 @@ routines from [Homebridge](https://github.com/nfarina/homebridge).
 
 ## Usage
 
-Just say "Turn \[on/off\] \[routine name\]" to trigger the routine. There is actually no "off"
-state to a routine and so will have no effect other than update it's status with HomeKit.
+Just say "Turn \[on/off\] \[routine name\]" to trigger the routine. There is actually no "off" state to a routine and 
+so will have no effect other than update it's status with HomeKit.
 
-## Credits
+## Contributors
 
-Credit to [jnewland](https://github.com/jnewland) for the original [HelloHomeBridge.groovy](https://github.com/jnewland/homebridge/blob/smartthings/accessories/HelloHomeBridge.groovy) file that
-[HomebridgeRoutineTrigger.groovy](HomebridgeRoutineTrigger.groovy) is based on.
+* [ajvwhite](https://github.com/ajvwhite)
 
-In addition thank you to [arcreative](https://github.com/arcreative) for the original [homebridge-smartthings-routine](https://github.com/arcreative/homebridge-smartthings-routine)
+## Derivative Credits
+
+The initial work of this repository was made possible due to the following work:
+
+* Thanks to [jnewland](https://github.com/jnewland) for the original [HelloHomeBridge.groovy](https://github.com/jnewland/homebridge/blob/smartthings/accessories/HelloHomeBridge.groovy) 
+file that [homebridge-routine-triggers.groovy](smartapps/homebridge-routine-triggers.src/homebridge-routine-triggers.groovy) is based on.
+
+* Thank you to [arcreative](https://github.com/arcreative) for the original [homebridge-smartthings-routine](https://github.com/arcreative/homebridge-smartthings-routine) 
 that this project is created from.
